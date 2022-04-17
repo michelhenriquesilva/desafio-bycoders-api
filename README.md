@@ -31,7 +31,7 @@ qualquer outro client como postman ou insomnia. O endpoint deve ser usado respei
 		"total": "2335.20"
 	},
 	{
-		"shop": "BAR DO JOÃO       ",
+		"shop": "BAR DO JOÃO",
 		"total": "406.00"
 	},
 	{

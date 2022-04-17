@@ -23,8 +23,8 @@ export default class ImportTransactionService {
                         document: row.slice(19, 30),
                         card: row.slice(30, 42),
                         time: row.slice(42, 48).replace(/(\d{2})(\d{2})(\d{2})/, "$1:$2:$3"),
-                        shop_owner: row.slice(48, 62),
-                        shop: row.slice(62, 81),
+                        shop_owner: row.slice(48, 62).trim(),
+                        shop: row.slice(62, 81).trim(),
                     })
                 }
 
