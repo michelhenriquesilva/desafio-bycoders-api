@@ -9,9 +9,9 @@ export default class TransactionService {
         this.repository = repository
     }
 
-    async index(request, response): Promise<Transaction[]>{
+    async index(request?, response?): Promise<Transaction[]>{
         try{
-            const data = await this.repository.index(request.query);
+            const data = await this.repository.index(request?.query);
             return data;
         }catch(err: any){
             throw err
