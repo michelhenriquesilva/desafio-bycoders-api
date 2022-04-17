@@ -24,6 +24,7 @@ qualquer outro client como postman ou insomnia. O endpoint deve ser usado respei
 - Envie o arquivo em uma propriedade com nome "file"
 
 2. O segundo endpoint é /transaction é possivel recuperar uma lista de totais de transações agrupados por loja, o resultado será semelhante o descrito abaixo
+```json
 [
 	{
 		"shop": "MERCADO DA AVENIDA",
@@ -46,3 +47,4 @@ qualquer outro client como postman ou insomnia. O endpoint deve ser usado respei
 		"total": "152.32"
 	}
 ]
+```
