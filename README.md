@@ -7,7 +7,7 @@ Por favor leia atentamente este documento para realizar a configuração adequad
 1. Clone o repositorio em seu ambiente local.
 2. Instale o gerenciador de banco de dados PostGreSQL (Infelizmente não foi possível utilizar o docker para virtualizar o ambiente devido insuficiencia de recursos)
 3. Abra o arquivo /src/database/migration.sql; e execute o script DDl do mesmo no seu banco de dados
-4. Dentro da pasta do projeto execute yarn start
+4. Dentro da pasta do projeto execute yarn install e depois yarn start
 5. Você pode executar os testes da aplicação com yarn test
 # Descrição do projeto
 
