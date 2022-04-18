@@ -8,7 +8,14 @@ export default class TransactionRepositorySQL implements TransactionRepositoryIn
     async index(): Promise<Transaction[]>{
         try{
             const rows = await database.query(
-                "SELECT MAX(shop) shop, SUM(amount) as total FROM transactions GROUP BY shop",
+                `select 
+                max(shop) shop,  
+                SUM(case 
+                    when type = 2 or type = 3 or type = 9
+                    then amount * -1
+                    else amount
+                end) as total
+                from transactions group by shop`,
             )
             return rows
         }catch(err: any){
